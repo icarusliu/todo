@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/todoService/todo.iml" filepath="$PROJECT_DIR$/todoService/todo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todoClient/todoClient.iml" filepath="$PROJECT_DIR$/todoClient/todoClient.iml" />
+    </modules>
+  </component>
+</project>

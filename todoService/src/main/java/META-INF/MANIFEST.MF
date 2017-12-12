@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Class-Path: spring-boot-starter-tomcat-1.5.4.RELEASE.jar hibernate-jpa
+ -2.1-api-1.0.0.Final.jar accessors-smart-1.1.jar jboss-logging-3.3.1.
+ Final.jar spring-core-4.3.9.RELEASE.jar spring-boot-starter-web-1.5.4
+ .RELEASE.jar hibernate-entitymanager-5.0.12.Final.jar spring-boot-sta
+ rter-logging-1.5.4.RELEASE.jar spring-boot-starter-aop-1.5.4.RELEASE.
+ jar spring-jdbc-4.3.9.RELEASE.jar slf4j-api-1.7.25.jar mockito-core-1
+ .10.19.jar antlr-2.7.7.jar classmate-1.3.3.jar json-smart-2.2.1.jar t
+ omcat-embed-el-8.5.15.jar spring-boot-test-1.5.4.RELEASE.jar dom4j-1.
+ 6.1.jar jsonassert-1.4.0.jar h2-1.4.195.jar spring-aspects-4.3.9.RELE
+ ASE.jar spring-test-4.3.9.RELEASE.jar javax.transaction-api-1.2.jar j
+ ul-to-slf4j-1.7.25.jar jackson-databind-2.8.8.jar spring-boot-devtool
+ s-1.5.4.RELEASE.jar hibernate-validator-5.3.5.Final.jar log4j-over-sl
+ f4j-1.7.25.jar spring-webmvc-4.3.9.RELEASE.jar spring-boot-starter-da
+ ta-jpa-1.5.4.RELEASE.jar spring-aop-4.3.9.RELEASE.jar spring-data-com
+ mons-1.13.4.RELEASE.jar jackson-core-2.8.8.jar snakeyaml-1.17.jar obj
+ enesis-2.1.jar jackson-annotations-2.8.0.jar tomcat-jdbc-8.5.15.jar j
+ son-path-2.2.0.jar aspectjweaver-1.8.10.jar tomcat-embed-core-8.5.15.
+ jar spring-boot-starter-1.5.4.RELEASE.jar spring-boot-starter-test-1.
+ 5.4.RELEASE.jar validation-api-1.1.0.Final.jar logback-core-1.1.11.ja
+ r spring-tx-4.3.9.RELEASE.jar spring-beans-4.3.9.RELEASE.jar spring-b
+ oot-starter-jdbc-1.5.4.RELEASE.jar android-json-0.0.20131108.vaadin1.
+ jar spring-boot-autoconfigure-1.5.4.RELEASE.jar asm-5.0.3.jar hamcres
+ t-core-1.3.jar jandex-2.0.0.Final.jar javassist-3.21.0-GA.jar jcl-ove
+ r-slf4j-1.7.25.jar tomcat-embed-websocket-8.5.15.jar hibernate-common
+ s-annotations-5.0.1.Final.jar spring-boot-test-autoconfigure-1.5.4.RE
+ LEASE.jar spring-context-4.3.9.RELEASE.jar hibernate-core-5.0.12.Fina
+ l.jar logback-classic-1.1.11.jar hamcrest-library-1.3.jar spring-web-
+ 4.3.9.RELEASE.jar spring-boot-1.5.4.RELEASE.jar spring-expression-4.3
+ .9.RELEASE.jar spring-orm-4.3.9.RELEASE.jar tomcat-juli-8.5.15.jar sp
+ ring-data-jpa-1.11.4.RELEASE.jar
+Main-Class: com.liuqi.learn.Application
+

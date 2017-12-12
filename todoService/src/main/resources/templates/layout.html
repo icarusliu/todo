@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title layout:title-pattern="测试 - $CONTENT_TITLE">Task List</title>
+
+    <style type="text/css">
+        ul {
+            list-style: none;
+        }
+        ul li {
+            float: left;
+            width: 120px;
+            line-height: 40px;
+            color: white;
+        }
+
+        ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            width: 100%;
+            line-height: 40px;
+            display: block;
+            text-align: center;
+        }
+
+        ul li a:hover {
+            background: #009a9a;
+            height: 40px;
+        }
+
+        .welcomeDiv a, .welcomeDiv font {
+            line-height: 40px;
+            float: right;
+            color: #aaa;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .button {
+            color: #222;
+            width: 60px;
+            height: 22px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body style="padding: 0px; margin: 0px; margin-top: -18px;">
+    <div id="header" style="height: 40px; width: 100%; background: #55a; ">
+        <ul>
+            <li><a th:href="@{/}">首页</a></li>
+            <li><a th:href="@{/user/users}">用户管理</a></li>
+        </ul>
+
+        <div th:if="${#authentication.name != 'anonymousUser'}" class="welcomeDiv">
+            <a th:href="@{/logout}">注销</a>
+            <font>，欢迎您！</font><font th:text="${#authentication.name}"></font>
+        </div>
+        <!--<div th:if="${#authentication.name eq 'anonymousUser'}" style="float: right; ">-->
+            <!--&lt;!&ndash; 未登录时显示登录对话框&ndash;&gt;-->
+            <!--<form th:action="@{/login}" method="post">-->
+                <!--<div><input type="submit" value="登录" class="button"/></div>-->
+                <!--<div><label class="headerLabel"> 密  码 : <input type="password" name="password" class="loginInput"/> </label></div>-->
+                <!--<div><label class="headerLabel"> 用户名 : <input type="text" name="username" class="loginInput"/> </label></div>-->
+                <!--<div th:if="${param.error}" class="errorMessage">-->
+                    <!--用户名或密码错!-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+    </div>
+    <div layout:fragment="content">
+
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+</html>

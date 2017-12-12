@@ -1,0 +1,105 @@
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import com.liuqi.tool.todo.ui.todo.TodoListView?>
+<?import com.liuqi.tool.todo.ui.requirement.RequirementView?>
+<?import com.liuqi.tool.todo.ui.calendar.CalendarView?>
+<?import com.liuqi.tool.todo.ui.calendar.MyCalendarView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import com.liuqi.tool.todo.ui.user.UserManagerView?>
+<?import com.liuqi.tool.todo.ui.env.EnvView?>
+<?import com.liuqi.tool.todo.ui.user.WorkOffView?>
+<?import com.liuqi.tool.todo.ui.note.NoteView?>
+<?import com.liuqi.tool.todo.ui.rerun.ReRunView?>
+<BorderPane xmlns:fx="http://javafx.com/fxml">
+        <!--<top>-->
+            <!--<BorderPane styleClass="mainTitle">-->
+                <!--<center>-->
+                    <!--<HBox spacing="10" fx:id="buttonPanel">-->
+                        <!--<padding>-->
+                            <!--<Insets>-->
+                                <!--<top>10</top>-->
+                                <!--<left>10</left>-->
+                            <!--</Insets>-->
+                        <!--</padding>-->
+                        <!--<Button fx:id="myCalendarButton" text="个人日历" onAction="#myCalendar" styleClass="titleButton" ></Button>-->
+                        <!--<Button fx:id="calendarButton" text="项目日历" onAction="#calendar" styleClass="titleButton"></Button>-->
+                        <!--<Button fx:id="todoButton" text="待办事项" onAction="#showTodoView" styleClass="titleButton"></Button>-->
+                        <!--<Button fx:id="requirementButton" text="需求清单" onAction="#showRequirementView" styleClass="titleButton"></Button>-->
+                    <!--</HBox>-->
+                <!--</center>-->
+                <!--<right>-->
+                    <!--<HBox>-->
+                        <!--<Button text="-" onAction="#min"></Button>-->
+                        <!--<Button text="X" onAction="#exit"></Button>-->
+                    <!--</HBox>-->
+                <!--</right>-->
+            <!--</BorderPane>-->
+        <!--</top>-->
+        <!--<center>-->
+            <!--<StackPane fx:id="stackPane">-->
+                <!--<MyCalendarView fx:id="myCalendar" styleClass="calendarView"/>-->
+                <!--<CalendarView fx:id="calendar" styleClass="calendarView"/>-->
+                <!--<TodoListView fx:id="todoList"/>-->
+                <!--<RequirementView fx:id="requirementList"/>-->
+            <!--</StackPane>-->
+        <!--</center>-->
+
+    <center>
+        <TabPane fx:id="mainTab"
+                     xmlns:fx="http://javafx.com/fxml">
+            <tabs>
+                <Tab text="个人日历" closable="false" id="myCalendar">
+                    <content>
+                        <MyCalendarView/>
+                    </content>
+                </Tab>
+                <Tab text="项目日历" closable="false" id="calendar">
+                    <content>
+                        <CalendarView/>
+                    </content>
+                </Tab>
+                <Tab text="待办事项" closable="false" id="todo">
+                    <content>
+                        <TodoListView/>
+                    </content>
+                </Tab>
+                <Tab text="需求管理" closable="false" id="requirement">
+                    <content>
+                        <RequirementView/>
+                    </content>
+                </Tab>
+                <Tab text="人员管理" closable="false" id="userManager">
+                    <content>
+                        <UserManagerView/>
+                    </content>
+                </Tab>
+                <Tab text="请假管理" closable="false" id="workOff">
+                    <content>
+                        <WorkOffView/>
+                    </content>
+                </Tab>
+                <Tab text="环境信息" closable="false" id="env">
+                    <content>
+                        <EnvView/>
+                    </content>
+                </Tab>
+                <Tab text="文档规范" closable="false" id="note">
+                    <content>
+                        <NoteView/>
+                    </content>
+                </Tab>
+                <Tab text="重跑日志" closable="false" id="reRun">
+                    <content>
+                        <ReRunView/>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

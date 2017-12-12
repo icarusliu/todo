@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html
+        layout:decorator="/layout"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+        xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>用户登录</title>
+
+    <style type="text/css">
+        body {
+            background: #ddd;
+        }
+
+        .loginDiv table {
+            margin: 100px auto;
+            font-size: 14px;
+        }
+
+        .submitButton {
+            height: 50px;
+            width: 60px;
+            margin-left: 20px;
+        }
+
+        .errorMsg {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div layout:fragment="content" class="loginDiv">
+    <form th:action="@{/login}" method="post">
+        <table>
+            <tr>
+                    <td> 用户名 :</td>
+                <td> <input type="text" name="username"/> </td>
+                <td rowspan="2"><input type="submit" value="登录" class="submitButton"/></td>
+            </tr>
+            <tr><td align="right"> 密  码 :</td><td> <input type="password" name="password"/> </td></tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <div th:if="${param.error}" class="errorMsg">
+                        用户名或密码错
+                    </div>
+                    <div th:if="${param.logout}">
+                        您已注销成功
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
